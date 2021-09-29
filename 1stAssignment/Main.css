@@ -1,0 +1,236 @@
+/*Top Nav Bar*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #24252a;
+}
+
+.logo {
+  cursor: pointer;
+  width: 10%;
+
+  left: 15px;
+}
+
+.nav__links a,
+.cta,
+.overlay__content a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #edf0f1;
+  text-decoration: none;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+}
+
+.nav__links li {
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  transition: color 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #0088a9;
+}
+
+.cta {
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease 0s;
+}
+
+.cta:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+/* Mobile Nav */
+
+.menu {
+  display: none;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: #24252a;
+  overflow-x: hidden;
+  transition: width 0.5s ease 0s;
+}
+
+.overlay--active {
+  width: 100%;
+}
+
+.overlay__content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay a {
+  padding: 15px;
+  font-size: 36px;
+  display: block;
+  transition: color 0.3s ease 0s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #0088a9;
+}
+.overlay .close {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: #edf0f1;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .close {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .nav__links,
+  .cta {
+    display: none;
+  }
+  .menu {
+    display: initial;
+  }
+}
+
+/**********************************/
+
+/*Welcome*/
+
+.container-1 {
+  text-align: center;
+  padding-top: 30px;
+  background-color: #24252a;
+  height: 210px;
+}
+.container-1 h1,
+p {
+  color: rgb(255, 255, 255);
+}
+
+/**********************************/
+
+/**Carousel**/
+.carousel {
+  background: #007aeb;
+  height: 650px;
+}
+
+.carousel-item .img-fluid {
+  width: 100%;
+  height: 650px;
+}
+
+.carousel-item a {
+  display: block;
+  width: 100%;
+  height: 650px;
+}
+
+/*****/
+
+/*****************
+
+
+
+
+}*****************/
+
+/*PCs Specs**/
+.container-2 p {
+  color: rgb(0, 0, 0);
+  padding-top: 180px;
+
+  padding-left: 10px;
+}
+.container-2 {
+  background-color: rgb(255, 255, 255);
+}
+/*********/
+/***ROWS**/
+
+.row {
+  display: flex;
+  padding-top: 10px;
+  font-size: 16px;
+}
+
+.row1 {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+}
+
+.row2 {
+  display: flex;
+  padding-top: 10px;
+  font-size: 16px;
+}
+/*****/
+
+.address p {
+  text-align: center;
+  top: 400px;
+  font-size: 10px;
+  color: white;
+  text-decoration: underline;
+}
+
+.navbar-brand h4 {
+  padding-top: 10px;
+}
+
+.topnav {
+  background-color: #fcfcfd;
+  overflow: hidden;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.foot {
+  background-color: #ffffff;
+}
+.icon {
+  padding-left: 1200px;
+}
