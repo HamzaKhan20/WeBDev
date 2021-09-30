@@ -61,9 +61,8 @@ header {
   transition: background-color 0.3s ease 0s;
   padding-top: 5px;
 }
-
-.cta:hover {
-  background-color: rgba(0, 136, 169, 0.8);
+.cta B:hover {
+  color: #24252a;
 }
 
 /* Mobile Nav */
