@@ -1,1 +1,1 @@
-<?php include_once("./index.Html")?>
+<?php include_once("./Index.Html")?>
