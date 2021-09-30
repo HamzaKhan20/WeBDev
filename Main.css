@@ -192,6 +192,7 @@ p {
 /***ROWS**/
 
 .row {
+  padding-left: 10px;
   display: flex;
   padding-top: 10px;
   font-size: 16px;
